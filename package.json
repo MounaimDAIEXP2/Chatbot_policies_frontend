@@ -1,0 +1,26 @@
+{
+  "name": "yestech-chatbot-V3",
+  "description": "Policy Chatbot",
+  "private": true,
+  "version": "0.0.1",
+  "author": "Mayo Oshin",
+  "license": "MIT",
+  "packageManager": "yarn@1.22.19",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+  "dev": "next dev",
+  "build": "yarn run turbo:command build",
+  "turbo:command": "yarn turbo",
+  "lint": "yarn run turbo:command lint",
+  "lint:fix": "yarn run turbo:command lint:fix",
+  "format": "yarn run turbo:command format",
+  "format:check": "yarn run turbo:command format:check"
+}
+,
+  "devDependencies": {
+    "turbo": "latest"
+  }
+}
